@@ -9,6 +9,6 @@ def health():
 @router.get("/")
 def root():
     return {
-        "app": "rodel-pytemplate",
+        "app": "rodel-bapp",
         "status": "ok"
     }

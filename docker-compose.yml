@@ -10,6 +10,11 @@ services:
     ports:
       - "${APP_PORT}:8000"
 
+    volumes:
+      - ${FRAMEWORK_DIR}:/app/framework
+      - ${POLICIES_DIR}:/app/framework/policies
+      - ./database:/app/database
+
     networks:
       rodel_app_net:
         ipv4_address: ${APP_IP}
